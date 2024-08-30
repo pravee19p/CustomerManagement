@@ -1,3 +1,47 @@
 customer support management which handles requests and tickets with the variable foreign key as customer id from
 the profile microservice, primary as request id, variable issue is the issue requested by
 the customer and the status of the request issued by the customer
+
+
+create a java customer management system with the following microservices (all microservices should be integrated with each other) : 
+use these technologies : spring boot , spring data jpa , postgressql 
+
+1.Customer profile microservice : customer_id as primary key
+		     first_name 
+		    last_name
+		email
+		phone_number
+		address 
+use this table to map with all the microservices
+			
+2.Service Subscription microservice : customer_id from customer profile microservice as foreign key
+					subscription_id as primary key
+					4 subscription plans should be displayed 
+					plan - one plan should be choosed by client
+					time_period : should be generated based on the selected plan
+
+3.Order Management Microservice :  customer_id from customer profile microservice as foreign key
+					plan from Service Subscription microservice as foreign key
+					order_id as primary key
+					start_date - date of order
+					end_date - 30 days from the date of order
+4.Customer support Microservice :  which handles requests and tickets 
+with the variable foreign key as customer id from the customer profile microservice
+primary as request id
+variable issue is the issue requested by the customer and 
+the status of the request issued by the customer
+
+5.Feedback Management Microservice : customer_id from customer profile microservice as foreign key
+					feedback_id as primary key 
+					feedback_text
+
+
+6.Notification Microservice : customer_id from customer profile microservice as foreign key
+				notification message should be generated in mail format using JMS based on Customer profile microservice,Order Management Microservice,Customer support microservice - for eg account has been created , updated , deleted , order placed cancelled , ticket solved , pending 
+
+GENERATE ENTIRE CODE FOR ALL MICROSERVICES (DON'T MENTION IMPLEMENT THESE STEPS)
+			      
+				
+				
+					
+
