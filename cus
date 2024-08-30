@@ -1,0 +1,3 @@
+customer support management which handles requests and tickets with the variable foreign key as customer id from
+the profile microservice, primary as request id, variable issue is the issue requested by
+the customer and the status of the request issued by the customer
