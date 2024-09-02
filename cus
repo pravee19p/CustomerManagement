@@ -40,7 +40,786 @@ the status of the request issued by the customer
 				notification message should be generated in mail format using JMS based on Customer profile microservice,Order Management Microservice,Customer support microservice - for eg account has been created , updated , deleted , order placed cancelled , ticket solved , pending 
 
 GENERATE ENTIRE CODE FOR ALL MICROSERVICES (DON'T MENTION IMPLEMENT THESE STEPS)
-			      
+
+
+
+
+
+
+
+
+[12:01 PM] hrithik dubey (Unverified) (External)
+Oracle - HX516u#$
+ 
+Jenkins
+admin@123
+ 
+postgres
+
+HX516u#$
+ 
+[12:01 PM] hrithik dubey (Unverified) (External)
+Mysql
+
+root
+
+HX516u#$
+
+ Data:-
+	Its a useful information is called data
+Database:-
+ 	Collection of useful information. Each database can one or more tables
+DBMS:-
+	It's a software manages the databases,views,function,procedure etc
+SQL;
+	DDL (Data Definition Language)
+		CREATE
+			CREATE TABLE tablename(columname DATATYPE(SIZE) [CONSTRAINTTYPE],
+			columname DATATYPE(SIZE) [CONSTRAINTTYPE],...);
+		ALTER
+		DESC
+		RENAME
+		DROP
+	DML(Data Manuplation Language)
+		INSERT
+		SELECT
+		UPDATE
+		DELETE
+SQL Clauses:-
+	Filter something
+		FROM clause - filter and takes a table from the database
+		WHERE Clause - filter and takes a row or rows from the table rows
+		SELECT Clause - filter and takes a column or columns from the table
+		GROUP BY clause
+		HAVING clause
+		ORDER BY Clause
+		LIMIT clause
+		OFFSET Clause
+		FETCH
+		JOIN Clause
+		ON Clause
+		USING Clause
+
+ SQL:-
+	Create a database
+		create database databasename
+	Choose database
+		use databasename;
+	create table structure
+		create table tablename(columnname1 datatype,columnname2 datatype,...)
+		create table employee(id int,name varchar(50),age int,salary int);
+	Table structure 
+		desc tablename;
+	insert (add a row)
+		insert into tablename values(54,"Rajesh",45,76757);
+	update (update a row)
+		update tablename set columnname=newvalue,... where columnname=value;
+	delete 
+		delete from tablename where columnname=value;
+	select 
+
+JDBC API:-
+		DriverManager
+		Connection
+		Statement
+		PreparedStatement 
+		CallableStatement
+		ResultSet
+		
+accessmodifier class ClassName{
+	accessmodifier non-accessmodifier datatype variablename;
+	...
+	accessmodifier nonaccessmodfier returntype methodName(arg){
+		...	
+	}
+}
+Method or function:-
+	accessmodifier nonaccessmodfier returntype methodName(arg){
+		...	
+	}
+	
+	
+	void add(){
+		int no1,int no2,int total;
+		total=no1+no2;
+		sout(total);
+	}
+			
+	add();
+
+	void add(int no1,int no2,int total){
+		
+		total=no1+no2;
+		sout(total);
+	}
+	add(45,5,0);
+
+	void add(int no1,int no2){
+		
+		int total=no1+no2;
+		sout(total);
+	}
+	add(45,5,0);
+	===========================
+	int add(Passenger p){
+		
+		int total=no1+no2;
+		return total;
+	}
+	Passenger passenger1=new Passenger();
+	add(passenger1);
+	=======================-===
+	int add(int no1,int no2){
+		
+		int total=no1+no2;
+		return total;
+	}
+	int value=add(45,5);
+	int totalCost=value*4556;
+===============================
+	String add(int no1,int no2){
+		String message="welcome";
+		int total=no1+no2;
+		return message;
+	}
+	
+	String msg=add(34,5);//20202020
+	System.out.println(msg);
+
+==================================
+	Passenger add(int no1,int no2){
+		Passenger passenger1=new Passenger();			
+		return passenger1;
+	}
+	
+	=======================================
+method definition
+	void add(){ //implemented method
+		statements;
+	}
+method call
+	void add(); // unimplemented or abstract method 
+Class:-
+	1. Predefined Class
+		The classes which is already there in the system library
+		Scanner,String,System etc
+	2. Userdefined Class
+		The classes which is created by the programmer
+		Passenger, Booking, Train etc
+Inheritance:-
+	Make an relationship between the classes
+	extends - keyword
+	
+	Types of Inheritance
+	1. IS-A Inheritance (extends)
+	2. HAS-A Inheritance (creating an object one class into another class)
+
+Access Modifiers:-
+	Visibility
+class HexaTraining{
+
+	public void angularTrg(String intTr){
+		System.out.println("Internal trainer:"+intTr);
+	}
+	public void angularTrg(int intTr){
+		System.out.println("Internal trainer:"+intTr);
+	}
+	public void angularTrg(String exTr, int cost){
+		System.out.println("External trainer:"+exTr+"
+	}
+	public void angularTrg(String exTr, int cost,String venue){
+		System.out.println("External trainer:"+exTr+" "+"Cost:"+cost+" "+"Venue:"+venue);
+	}
+	public static void main(String[] args) {
+		HexaTraining hexa=new HexaTraining();
+		hexa.angularTrg("Vimala");
+
+	}
+	}
+
+	Polymorphism - 10 minutes
+	Abstraction
+	packages, accsss modfier, non access modifier - 20minutes
+	abstract class 
+	interface - 30 minutes
+	final keyword - 15 minutes
+	Exception Handling - 2 Hours
+
+	Java 8 Features
+		Functional interface
+		Lambda
+		Method Reference
+		Optional 
+		forEach
+		Streams API
+	Junit/Code Coverage
+	Wrapper Classes
+	Generics
+	Collection
+
+
+	Packages:-
+		package - collection of related class
+			- Organize your source code
+			- visibility
+			- Naming collision
+				
+			airtel - www.airtel.in
+				
+			Eclipse
+				-> airtel web
+					in.airtel.plans
+						- MonthlyPlan.java
+						- YearlyPlan.java
+						- Prepaid.java
+						- Postpaid.java
+					in.airtel.payment
+						- Upi.java
+						- 	CreditCard.java
+						- DebiCard.java
+						
+	final keyword:-
+		before a variable
+		before a method
+			
+		before a class
+	Interface:-
+		If a class has all the methods are abstract methods then mark your class as an interface.
+		
+		interface is similar to class
+		
+		100% abstraction
+
+Exception Handling:-
+===================
+	Exception is an abnormal condition arises during code execution(Runtime)
+	If exception happens during code runtime your program will get terminated abrubtly
+	It is a programmer responsiblity should anticipate and handle the exception so that u can terminate
+	smoothly
+
+	Two types of exception:-
+		Unchecked Exception or RuntimeException
+			An exception which extends RuntimeException class then that exception under the
+			unchecked exception type
+			
+			ArithmeticException, NullPointerException
+
+		Checked Exception
+			An exception which extends Exception class then that exception under the
+			checked exception type
+
+			ClassNotFoundException
+			IOException
+				
+	Array:-
+		
+
+		type[] arrName=new type[size];
+
+		int[] data=new int[5];//Array is holding list of int values
+		String[] str=new String[3];// Array is holding list of string objects
+		PostPaid pp=new PostPaid[3];// Array is hloding list PostPaid objects
+
+		int[] data1={3545,5656,354,55,54};
+		Adv:-
+			Array is random access
+			
+		Disadv:
+			Size is fixed. you cannot increase or decrease the size
+			When u have more of insertion / deletion u need to move your data
+
+
+		insertion deletion updation sort shuffle contains etc
+			
+Collection:-
+	it is collection of objects
+	size it grow and shrink
+	Each collection classes are backed by one datastructure algorithm
+	Collection frameworks has set of interfaces, abstract classes, concerete classes
+
+
+
+JDBC API - java.sql
+	 - set of interface and classes which help us to connect any database
+		DriverManager(C) - public static Connection getConnection(String url,String username,String password);
+		Connection(I) - connection reference it holds a connection session between java and db
+		Statement(I) - can create an statement object using connection obj
+			
+			- public boolean execute(String query));
+			- public ResultSet executeQuery(String query)
+			- public int executeUpdate(String query))	
+		PreparedStatement(I) - can create an prepared statement object using connection obj
+			
+			- public boolean execute();
+			- public ResultSet executeQuery()
+			- public int executeUpdate()	
+			ResultSet(I) - Resultset object hold result values return by the db
+				hasNext()
+				next()
+
+		CallableStatement(I)
+
+Step by Step for JDBC:-
+		Prerequstie:-
+			Download the jdbc driver and extract
+			Load the jdbc driver into the project
+		Step 1: Load the Driver.class  OR Registering the Driver.class
+			Class.forName("com.mysql.cj.jdbc.Driver")
+
+		Step 2: Create  a Connection object 
+			Connection con = DriverManager.getConnection(url,username,password);
+
+			url="jdbc:dbvendorname://ipaddress:portno/dbname"
+				jdbc:mysql://localhost:3306/employee
+			username=root
+			password=HX516u#$
+		Step 3: Write and execute the query
+			Statement stmt=con.createStatement();
+
+	
+
+Statement(I) - u can execute static sql query
+			- public boolean execute(String query) - DDL and DML;
+			- public ResultSet executeQuery(String query) -DML - SELECT
+			- public int executeUpdate(String query) -DML - INSERT,UPDATE,DELETE 
+
+			stmt.executeUpdate("insert into employee values(35,'abc',68,57755)");	
+			stmt.executeUpdate("update employee set name='gf',age=57,salary=3545 where id=123")
+PreparedStatement(I) - u can execute dynamic query
+			- public boolean execute() - DDL and DML;
+			- public ResultSet executeQuery() -DML - SELECT
+			- public int executeUpdate() -DML - INSERT,UPDATE,DELETE 
+			pstmt.executeUpdate("insert into employee values(?,?,?,?)");	
+			stmt.executeUpdate("update employee set name=?,age=?,salary=? where id=?")
+
+
+DO $$
+DECLARE
+	customer_data customer%ROWTYPE;
+	customer_cursor CURSORgbh  FOR SELECT * FROM customer LIMIT 5;
+BEGIN
+	OPEN customer_cursor;
+	LOOP
+		FETCH NEXT FROM customer_cursor INTO customer_data;
+		EXIT WHEN NOT FOUND;
+		RAISE NOTICE '%',customer_data;
+	END LOOP;
+	CLOSE customer_cursor;
+END $$;
+
+Spring Framework:-
+	Spring core - IOC, DI
+	AOP
+	Spring mvc
+
+	JdbcDemo
+		- JRE System Library -> Jar -> packages -> interfaces, classes, etc
+		- mysql-connector-j.9.0.0.jar
+		- junit-jupitor-5.jar
+	maven - project management tool
+		local repository - .m2
+		remote repository -
+
+	Spring Bean Configuration:-
+			1. XML Bean Configuration
+			2. Java Bean Configuration - @Configuration
+				2.1 @Bean
+					 @Bean
+    					 public Employee employee1(){// Bean Definition
+        					return new Employee();
+    					 }
+				2.2 Sterotype Annotation - @Component
+		
+		
+		GET http://localhost:8181/customer
+		GET http://localhost:8181/customer/898
+		GET http://localhost:8181/customer/989
+		GET http://localhost:8181/customer/34
+		GET http://localhost:8181/customer/545
+		POST http://localhost:8181/customer
+		PUT http://localhost:8181/customer
+		DELETE http://localhost:8181/customer/45		
+		DELETE http://localhost:8181/customer/78
+		DELETE http://localhost:8181/customer/898
+		DELETE http://localhost:8181/customer/4545
+
+
+
+		public interface CustomerService
+		{	
+			public List<Customer> getAllCustomers();
+			public Customer postCustomer(Customer customer);
+			public Customer putCustomer(Customer customer)
+			public Customer getCustomerById(int customerId)
+			public String deleteCustomerById(int customerId)
+		}
+			
+
+
+
+
+		Library
+			
+			BookSevice(I)
+			public Book addBook(Book book);
+			public List<Book> getAllBooks();
+			public Book getBookById(int bookId);
+			public Book updateBook(Book book);
+			public String deleteBookById(int bookId)
+
+
+			Spring web
+			Spring Data Jpa
+			postgres driver
+			spring boot devtools
+
+Mysql properties:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/springboot_mysql_example
+spring.datasource.username=root
+spring.datasource.password=YOUR_DB_PASSWORD
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+
+
+POstgresql properties:-
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/springbootdb
+spring.datasource.username=postgres
+spring.datasource.password=root@123
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.show-sql=true
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+
+Lombok
+JPA query generation method
+Hibernate Mapping
+hbm-ddl property
+@GeneratedValue
+Cascading Type
+microservice - user-microservice
+	       product-microservice
+	       order-service
+
+Team 3 Viswa - Telecom Billing and Payments System
+Team 4 Praveena - Telecom Customer Management System
+Team 1 Joshan - Telecom Customer Relationship Management (CRM) System
+Team 2 Darren - Telecom Subscription Management System
+
+Git:-
+	Version control system
+	git - Repository
+	1. Local Repository (.git) - local repositroy - source code versioning manage
+	2. Remote Repository- git hub - remote repository - source code versioning manage
+
+		
+	git init
+
+	https://github.com/rajeshkit/tms.git
+
+Maven:-
+	Archeytype
+	Lifecycle
+		
+	Plugin
+	Goals
+
+Phases			Goal 		Plugin
+validate 		validate	validate
+compile			compile		compiler-plugin
+test			test		surefire-plugin
+package			package		package-plugin
+verify			verify		
+install
+deploy
+
+Date Time API:-
+		Before Jdk 1.8
+			java.util.Date				
+			java.sql.Date
+
+		After JDK 1.8
+			java.util.time
+				LocalDate
+				LocalTime
+				LocalDateTime
+		Regex:-
+
+Docker containers:-
+	- 
+
+	Commands:-
+		docker --version
+		docker info
+	Managing Images:-
+		1. creating image
+			Define a Dockerfile
+			fill the Dockerfile instruction 
+			Docker build
+		2. image pull
+			Docker pull imagename
+		3. image remove	
+			Docker image remove imagename:tag
+			Docker rmi imagename:tag
+	Managing constainer:-
+		1. list the container
+			docker ps - list out all the only running containers
+			dcker ps -a - list both running and non running container
+		2. create and run a container
+			Docker run imagename:tag
+		3. Stop the container
+			Docker stop containeranameorid
+		4. Stop the container
+			Docker start containeranameorid
+		3. remove container
+			Docker remove containeridorname
+
+
+
+		$ docker run --name test-mysql 
+		-e MYSQL_ROOT_PASSWORD=strong_password 
+		-d mysql
+
+	https://github.com/rajeshkit/alchamy-week2
+
+
+Selenium Framework:-
+
+
+	XPath syntax => //Tagname[@attribute='value']
+	Selenium refers to a suite of tools that are widely used in the testing community when it comes to cross-browser testing. Selenium cannot automate desktop applications; it can only be used in browser automation. It supports a number of browsers such as Chrome, Firefox, Internet Explorer, Safari, Opera and operating systems such as Windows, Mac, Linux/Unix.
+
+	Selenium also provides compatibility with different programming languages – C#, Java, JavaScript, Ruby, Python, PHP. Testers can choose which language to design test cases in, thus making Selenium highly favorable for its flexibility.
+	
+	
+	Selenium Integrated Development Environment (IDE) is a browser extension for Firefox and Chrome that generates tests quickly through its record and playback functionality. The IDE records the user actions on the browser and exports them as a reusable script in different languages such as Java, C# and JavaScript.
+		
+	Selenium WebDriver is the core component of Selenium which provides a programming interface for driving the web browsers. It allows to write tests in different programming languages to interact with the web elements, simulate user interactions and perform assertions.
+	
+	Selenium Grid is a tool that is used for concurrent execution of test cases on different browsers, machines, and operating systems simultaneously. It allows parallel test execution making it faster to run large test suites.
+	
+	Selenium RC is obsolete. It is being replaced by Selenium Webdriver due to its complex architecture and limitations. It allows you to develop responsive design tests in any scripting language of your choice. Server and client libraries are the two main components of Selenium RC.
+
+
+	Selenium Framework is a suite of automation testing tools based on the JavaScript framework.
+	It could run the tests directly on the target browser, drive the interactions on the required web page and rerun them without any manual input.
+	It eliminates repetitive manual testing that consumes lots of time and effort.	
+	Conforms with the idea of Agile and DevOps, which endorse the continuous delivery workflow.
+
+	Selenium WebDriver
+		Selenium WebDriver, also known as Selenium 2.0,
+		 is a collection of language-specific bindings that drive a browser how it has to be driven
+		It is the successor of Selenium Remote Control and consists of API, Library, Driver, and Framework that work together to enable test execution.
+		
+		While the driver, which is an executable module, opens up the browser instance and runs the test script.
+		These drivers could be browser-specific such as Chromedriver for Google Chrome.
+		Frameworks such as Cucumber and TestNG are used for testing the connection of WebDriver’s client and the browser/driver. These tests can also be conducted on multiple drivers with the help of a Selenium Grid.
+		Provides support for modern browsers like Chrome, Firefox, Opera, Safari, and Internet Explorer.
+	Selenium IDE
+		Selenium IDE is a Chrome and Firefox plugin capable of logging natural interactions in the browser and generating its code in different programming languages.
+		These programming languages include Java, Python, Ruby, C#, and Selenese.
+		It enables the testers to record within the IDE and play out the test scenario on the browser, where the IDE can replay them and highlight the errors in code with Red color.
+
+		The use of multiple locators for each element in the IDE ensures successful execution.
+		Thus, cross-browser testing using Selenium WebDriver is widely recommended.
+
+	Why selenium:
+		The primary reason behind such overwhelming popularity of Selenium is that it is open source. This not only helps keep the costs in check but also ensures that companies are using a tool that will get continually updated.
+		Its multi-dimensional flexibility in scripting languages, OS, browsers, and integrations widens the test coverage, enabling enterprises to deliver a web application that is highly reliable and functional.
+		Selenium test scripts can be written in Java, Python, C#, PHP, Ruby, Perl and .Net. This allows many testers to use it without any language barriers.
+		It can be carried out on Windows, macOS, and Linux, using Mozilla Firefox, Internet Explorer, Chrome, Safari, and Opera browsers. This enables thorough cross-browser compatibility testing with strong environment support.
+
+TestNg:-
+
+	
+
+What is BDD:-
+
+	Cucumber is a Behavior Driven Development (BDD) framework tool to write test cases
+
+	BDD framework i.e. Behavior Driven Development is a software development approach that allows the tester/business analyst to create test cases in simple text language (English).
+
+	The simple language used in the scenarios helps even non-technical team members to understand what is going on in the software project. This helps and improves communication among technical and non-technical teams, managers, and stakeholders.
+	
+	By inheriting TDD, BDD also has all those features along with its advantages.
+
+	Test scenarios are written separately in a different file, named as Feature file.
+	Tests are written by focusing user stories and system behavior in a layman language.
+	Code is subject to be written differently in step definitions file i.e. Java, Python.
+		
+	Gherkin Language
+	===============
+		Given: Some given context (Preconditions).
+		When: Some Action is performed (Actions).
+		And
+		Then: Particular outcome/consequence after the above step (Results).
+		But
+
+		Feature: BDD implementation using Cucumber
+
+		Scenario: Login to G-mail using Cucumber plugin
+
+		Given User is navigating to G-mail Login Page
+		When User need to enter username as "Username" and password as "Password"
+		Then User is successfully navigated to the G-mail Mail Box
+
+
+DevOps:-
+	Dev - development - i7 - 64 bit - Windows 11- eclipse
+	Ops - Operations - QA + Admin - Build test deploy - i5 - 64bit - linux - intellj 
+
+	 
+	Install Java
+		1. Update the system
+			sudo apt update -y && sudo apt upgrade -y
+		2. Install Java from the default repository
+			sudo apt install openjdk-21-jdk -y
+		3. java -version
+	Install Jenkins
+		1. Update the system
+			sudo apt update -y 
+		2. Add Jenkins APT Repository
+			sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+			https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+
+			echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
+			https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+			/etc/apt/sources.list.d/jenkins.list > /dev/null
+		3. sudo apt update
+			sudo apt update -y 
+		4. sudo systemctl start jenkins
+		5. systemctl status jenkins
+		6. In Azure vm where u have installed docker. in the same vm network Settings-->Network security group
+			--> Add Inboud rule allow 8080 port number
+		7. Then open a browser tab type http://<Ubuntu-System-IP>:8080 docker will open 
+		8. To see the docker initial password 
+			sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+			copy the password open install suggested plugins
+	Install Git
+		1. sudo apt install git
+		2. git --version
+	
+	Install Maven
+		1. Update the system repositories
+			sudo apt update -y
+		2. Install maven
+			sudo apt install maven -y
+		3. Verify installation
+			mvn -version
+		
+	Jenkins Extra Mandatory Steps
+		Configure maven and git inside Jenkins	
+			Jenkins-> Dashboard -> Manage Jenkins --> Tools --> configure git & maven
+			
+		Show demo CI and build 
+		
+		create pipeline and demonstrate incementatly show demo git checkout, mvn build, etc
+	
+	install docker in the same instance
+		1. Add Docker's official GPG key:
+			sudo apt-get update
+			sudo apt-get install ca-certificates curl
+			sudo install -m 0755 -d /etc/apt/keyrings
+			sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+			sudo chmod a+r /etc/apt/keyrings/docker.asc		
+
+		2. # Add the repository to Apt sources:
+			echo \
+  			"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  			$(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  			sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+			
+		3. sudo apt-get update
+		4. sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+		5. docker --version
+		6. sudo usermod -a -G docker $(whoami)
+		7. newgrp docker
+		8. sudo chmod 666 /var/run/docker.sock
+		
+
+		in the same pipeline add stage like docker build image, run that in container
+
+		
+CI/CD pipeline Jenkins automation:-
+pipeline {
+    agent any
+    
+    stages {
+      stage('Git Checkout') {
+            steps {
+                script {
+                    git url: 'https://github.com/rajeshkit/employeeapp.git'
+                      echo 'git checkout is done code pulled from github to jenkins workspace'
+                }
+            }
+        }
+        stage('Mvn Build') {
+            steps {
+                script {
+                    sh 'mvn clean install'
+                      echo 'maven build is done'
+                }
+            }
+        }
+        stage('docker image'){
+            steps{
+             
+                sh 'docker build -t 9894851315/employeeapp:${BUILD_NUMBER} .'
+                echo 'docker image is created'
+            }
+        }
+        stage('docker deploy'){
+            steps{
+                sh 'docker container rm -f employeeapp'
+                sh 'docker run --name employeeapp -itd -p 9999:9999 9894851315/employeeapp:${BUILD_NUMBER}'
+                echo 'docker container is created'
+                echo 'docker container is running'
+            }
+        }
+        
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				
 				
 					
