@@ -13,6 +13,13 @@ public class Profile {
     private String lastName;
     private String email;
     private String phoneNumber;
+    private String address;
+    public String getAddress() {
+        return address;
+    }
+    public void setAddress(String address) {
+        this.address = address;
+    }
     public Long getId() {
         return id;
     }
@@ -43,21 +50,23 @@ public class Profile {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    public Profile(Long id, String firstName, String lastName, String email, String phoneNumber) {
+    
+    public Profile(Long id, String firstName, String lastName, String email, String phoneNumber, String address) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.address = address;
     }
     public Profile() {
     }
     @Override
     public String toString() {
         return "Profile [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
-                + ", phoneNumber=" + phoneNumber + "]";
+                + ", phoneNumber=" + phoneNumber + ", address=" + address + "]";
     }
-
+    
     
 
     
