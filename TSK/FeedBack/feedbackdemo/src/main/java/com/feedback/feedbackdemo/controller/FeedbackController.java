@@ -33,6 +33,3 @@ public class FeedbackController {
         return ResponseEntity.ok(service.getAllFeedbacks());
     }
 }
-
-
-
