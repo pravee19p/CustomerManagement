@@ -1,3 +1,5 @@
+https://chatgpt.com/share/45819917-af49-4679-9a28-4f9801f81c97
+
 create a java customer management system with the following microservices (all microservices should be integrated with each other) : 
 use these technologies : spring boot , spring data jpa , postgressql 
 
