@@ -13,6 +13,19 @@ public class SubscriptionPlan {
 
     private String plan;
     private Integer timePeriod;
+    private Long amount;
+
+    public Long getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Long amount) {
+        this.amount = amount;
+    }
+
+    public SubscriptionPlan(Long amount) {
+        this.amount = amount;
+    }
 
     public SubscriptionPlan() {
     }
